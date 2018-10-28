@@ -1,2 +1,5 @@
 env: tensorflow-1.7
 machine: cpu
+input:
+  - source: henrya2/datasets/cifar-10-batches-py/1
+    destination: cifar_10_batches_py
