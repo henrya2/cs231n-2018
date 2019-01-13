@@ -125,7 +125,7 @@ class KNearestNeighbor(object):
     # (x-y)^2 = x^2 + y^2 - 2xy
     dists = np.sqrt(np.multiply(np.dot(X, self.X_train.T), -2) +
                         np.sum(self.X_train ** 2, axis=1) +
-                        np.sum(X ** 2, axis=1).reshape(-1, 1))
+                        np.sum(X ** 2, axis=1, keepdims=True))
     #########################################################################
     #                         END OF YOUR CODE                              #
     #########################################################################
